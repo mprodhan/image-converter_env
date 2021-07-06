@@ -30,7 +30,7 @@ def main(args):
         reduced_name = os.path.splitext(filename)[0]
         img.save(f'{output_images}{reduced_name}.png', 'png')
         img.thumbnail((150,150))
-        print(img.size)
+        print(img.size, "success")
         # print('success!!!')
         img.show()
 
