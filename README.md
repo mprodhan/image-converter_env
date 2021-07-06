@@ -49,12 +49,39 @@ image_folder consists of the images. The three things, that need to be accomopli
 is to create the new_directory by calling the helper function, transform the .jpg file to .png, and to
 create a thumbnail of the png images.
 
+In running the for loop, the PIL module also known as the pillow library application (3),
+had to be installed, in order to access the images, run them through the for loop and use the tranformed
+images to .png to resize by the use of the  img.thumbnail((x,y)) to reduce the image into a clear thumbnail
+file.
+
 Finally, the codes are then run through the filename, by creating the following code:
-    
+
     if __name__ == '__main__':
-    main(sys.argv[1:])
+    main(sys.argv[1:]) (4)
 
 What this means is that, the __name__ is the name of the file and it is passed through,
 the main function as a whole summarized versions of the helper and main functions, which will
 parse the output via  main(sys.srgv[1:]). The main function via 'args' argument is passing the
 sys,srgv list.
+
+
+
+Sources:
+(1): The sys module
+https://docs.python.org/3/library/sys.html
+
+(2): The os module
+https://docs.python.org/3/library/os.html
+
+(3): pillow (PIL) documentation Library
+https://pillow.readthedocs.io/en/stable/
+
+(4) Stackoverflow (if __name__ == '__main__')
+https://stackoverflow.com/questions/419163/what-does-if-name-main-do
+
+
+
+
+
+
+
